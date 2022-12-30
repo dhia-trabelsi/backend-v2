@@ -1,0 +1,20 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Training;
+import com.example.demo.repository.TrainingRepository;
+
+@Service
+public class TrainingService {
+
+	@Autowired
+	private TrainingRepository trainingRepository;
+	
+	public Training saveTraining(Training training) {
+		
+		return trainingRepository.save(training);
+	}
+	
+}

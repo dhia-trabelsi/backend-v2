@@ -1,0 +1,11 @@
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+spring.application.name=Gateway-Service
+logging.level.root=INFO
+logging.level.org.springframework.cloud.gateway.route.RouteDefinitionLocator= INFO
+logging.level.org.springframework.cloud.gateway= TRACE
+server.port=8081
+
+
+spring.cloud.gateway.routes[0].id=Training-Service
+spring.cloud.gateway.routes[0].uri=lb://Training-Service
+spring.cloud.gateway.routes[0].predicates[0]=Path=/api/training/**

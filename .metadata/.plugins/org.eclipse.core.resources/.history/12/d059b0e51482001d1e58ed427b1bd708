@@ -1,0 +1,22 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.dto.TrainingRequest;
+import com.example.demo.entity.Training;
+
+@Service
+public class TrainingService {
+
+
+	
+	public void createTraining(TrainingRequest trainingRequest) {
+		
+		Training training = Training.builder
+	}
+	
+	
+	
+	
+}
